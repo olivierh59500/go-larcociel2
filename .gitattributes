@@ -1,0 +1,4 @@
+*.bin binary
+*.ym binary
+assets/original/message.txt whitespace=-blank-at-eol
+assets/original/font-order.txt whitespace=-blank-at-eol
