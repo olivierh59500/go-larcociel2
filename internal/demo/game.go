@@ -191,6 +191,11 @@ func (g *Game) Update() error {
 	if ebiten.IsKeyPressed(ebiten.KeyDown) {
 		g.center[1]++
 	}
+	// Touch moves the same projection center as the desktop arrow controls.
+	for _, id := range ebiten.AppendTouchIDs(nil) {
+		x, y := ebiten.TouchPosition(id)
+		g.center = [2]int16{int16(x), int16(y)}
+	}
 	g.clock.Step()
 	g.stream.Step(1, nil)
 	if _, err := io.ReadFull(g.visual, g.pcm[:]); err != nil {
