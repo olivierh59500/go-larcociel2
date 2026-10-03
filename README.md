@@ -3,6 +3,27 @@
 A Go/Ebitengine conversion of **DMA Intro 2**, an Atari ST intro by
 **Larcociel of DMA**, using Demo Construction Kit **v1.0.13**.
 
+<!-- Project showcase -->
+## Screenshots
+
+[![Yellow bouncing spheres, the DMA logo, and a moving perspective checkerboard](docs/media/screenshot-1.png)](docs/media/screenshot-1.png)
+
+Yellow bouncing spheres, the DMA logo, and a moving perspective checkerboard.
+
+## Video
+
+[![Animated preview of Larcociel 2 Go](docs/media/preview.gif)](https://github.com/olivierh59500/go-larcociel2/raw/refs/heads/main/docs/media/preview.mp4)
+
+**[Watch or download the 24-second MP4 preview with sound](https://github.com/olivierh59500/go-larcociel2/raw/refs/heads/main/docs/media/preview.mp4)**
+
+This preview is captured from the Go production.
+
+The animated image is silent; the MP4 includes the soundtrack.
+
+<!-- End project showcase -->
+
+## Production notes
+
 ```sh
 go run ./cmd/larcociel2
 go run ./cmd/larcociel2 -mute
